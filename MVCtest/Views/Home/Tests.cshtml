@@ -1,0 +1,16 @@
+﻿@model Test
+
+@{
+    ViewBag.Title = "Процесс прохождения теста";
+}
+<h2>Вопрос @Model.num</h2>
+    
+<form method="post" action="Processing">
+    <label>@Model.Qsn</label><br/>
+    <input type="text" name="answForm" /><br />
+    <input type="submit" value="Send" />
+</form>
+
+@section Footer {
+           <h3>Кто лучший? Ты!</h3>
+}
